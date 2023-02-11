@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: white;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table {
+          overflow: hidden;
+        }
+        td {
+          position: relative;
+        }
+        th {
+          height: 30px;
+        }
+
+        .odd{
+          background-color: #424242;
+          height: 30px;
+        }
+        .even{
+          background-color: #6b6b6b;
+          height: 30px;
+        }
+
+        .header_table {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+            border-top: none;
+            border-left: none;
+        }
+
+        .date {
+            text-align: center;
+        }
+
+        td:hover::after {
+            content: ''; 
+            background-color: #45e460; /* Цвет фона */
+            height: 20000px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: -5000px;
+            z-index: 1;
+            opacity: 30%;
+        }
+        
+        .purchase {
+          border-radius: 14px;
+          border-color: darkgrey;
+          background-color: white;
+          height: 36px;
+          width: 100px;
+          font-family: arial,sans-serif;
+          z-index: 2;
+          position: relative;
+        }
+
+        .table-bottom {
+            height: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <table style="width:100%">
+  <tr>
+    <th class="white odd"></th>
+    <th class="header_table odd">Mini</th>
+    <th class="header_table odd">Normal</th>
+    <th class="header_table odd">Professional</th>
+    <th class="header_table odd">Superb</th>
+    <th class="header_table odd">Enterprise</th>
+  </tr>
+  <tr>
+    <td class="white even"></td>
+    <td class="date even">$5/month</td>
+    <td class="date even">$10/month</td>
+    <td class="date even">$25/month</td>
+    <td class="date even">$50/month</td>
+    <td class="date even">$75/month</td>
+  </tr>
+  <tr>
+    <td class="odd">Bandwidth</td>
+    <td class="date odd">1000 MB</td>
+    <td class="date odd">2000 MB</td>
+    <td class="date odd">3000 MB</td>
+    <td class="date odd">5000 MB</td>
+    <td class="date odd">10 GB</td>
+  </tr>
+  <tr>
+    <td class="even">Database size</td>
+    <td class="date even">1 GB</td>
+    <td class="date even">2 GB</td>
+    <td class="date even">3 GB</td>
+    <td class="date even">5 GB</td>
+    <td class="date even">20 GB</td>
+  </tr>
+  <tr>
+    <td class="odd">Disk capacity</td>
+    <td class="date odd">2 GB</td>
+    <td class="date odd">4 GB</td>
+    <td class="date odd">6 GB</td>
+    <td class="date odd">10 GB</td>
+    <td class="date odd">unlimited</td>
+  </tr>
+  <tr>
+    <td class="even">CPU speed</td>
+    <td class="date even">2,1 Ghz</td>
+    <td class="date even">3 Ghz</td>
+    <td class="date even">5 Ghz</td>
+    <td class="date even">5 Ghz</td>
+    <td class="date even">5 Ghz</td>
+  </tr>
+  <tr>
+    <td class="odd">Memory</td>
+    <td class="date odd">128 MB</td>
+    <td class="date odd">256 MB</td>
+    <td class="date odd">512 MB</td>
+    <td class="date odd">1024 MB</td>
+    <td class="date odd">2 GB</td>
+  </tr>
+  <tr>
+    <td class="even">SSL</td>
+    <td class="date even">-</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+  </tr>
+  <tr>
+    <td class="odd">cPanel</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+  </tr>
+  <tr>
+    <td class="even">PHP</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+    <td class="date even">✓</td>
+  </tr>
+  <tr>
+    <td class="odd">Linux OS</td>
+    <td class="date odd">-</td>
+    <td class="date odd">-</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+    <td class="date odd">✓</td>
+  </tr>
+  <tr>
+    <td class="white table-bottom"></td>
+    <td class="date table-bottom"><button class="purchase">purchase</button></td>
+    <td class="date table-bottom"><button class="purchase">purchase</button></td>
+    <td class="date table-bottom"><button class="purchase">purchase</button></td>
+    <td class="date table-bottom"><button class="purchase">purchase</button></td>
+    <td class="date table-bottom"><button class="purchase">purchase</button></td>
+  </tr>
+</table>
+    </table>
+    
+</body>
+</html>
